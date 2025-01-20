@@ -259,11 +259,11 @@ img {
 }
 
 .curriculum__card:nth-child(2) a {
-  color: #F0AA00;
+  color: #f0aa00;
 }
 
 .curriculum__card:nth-child(3) a {
-  color: #8700FF;
+  color: #8700ff;
 }
 
 .curriculum__btn {
@@ -274,11 +274,125 @@ img {
 .curriculum__btn button {
   border: none;
   outline: none;
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   background-color: var(--primary-color);
   border-radius: 50%;
   color: white;
   font-size: 18px;
   cursor: pointer;
+}
+
+/* Stories area css */
+
+.stories__area {
+  padding: 60px 0;
+  background-image: url("./images/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3) 0%, #fff 100%);
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-size: cover;
+}
+
+.stories__area h2 {
+  text-align: center;
+  color: var(--dark);
+  font-size: 36px;
+}
+
+.story__display {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.story__card:first-child {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.story__card {
+  background-color: white;
+  border-radius: 16px;
+}
+
+.story__card h3 {
+  font-size: 16px;
+}
+
+.story__card__img img {
+  border-radius: 16px 16px 0 0;
+}
+
+.story__card__content {
+  padding: 30px;
+}
+
+.story__card__img {
+  position: relative;
+}
+
+.date__pill {
+  padding: 10px;
+  background-color: #3cd8e8;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 90px;
+  position: absolute;
+  bottom: -6%;
+  left: 7%;
+}
+
+.story__card:first-child h3 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.story__card:first-child p {
+  color: #666666;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.story__btn {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.story__btn button {
+  padding: 12px 50px;
+  background-color: var(--dark);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.story__btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.story__btn button:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
 }
