@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #FEA301;
-  --secondary-color: #01ACFD;
+  --primary-color: #fea301;
+  --secondary-color: #01acfd;
   --dark: #111;
 }
 
@@ -70,11 +70,11 @@ img {
 }
 
 .nav li:nth-child(3) a {
-  color: #05D4DF;
+  color: #05d4df;
 }
 
 .nav li:nth-child(4) a {
-  color: #5D58EF;
+  color: #5d58ef;
 }
 
 .contact__btn button {
@@ -101,7 +101,7 @@ img {
   background-color: var(--dark);
   border-radius: 12px;
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
   opacity: 0;
   visibility: hidden;
 }
@@ -113,3 +113,70 @@ img {
 }
 
 /* Banner area css */
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__left {
+  width: 70%;
+}
+
+.banner__left h2 {
+  font-size: 42px;
+  color: var(--dark);
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.banner__left p {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.banner__left button {
+  padding: 12px 50px;
+  background-color: var(--dark);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.banner__left button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.banner__left button:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.bannaer_highlight_one {
+  color: var(--primary-color);
+}
+
+.bannaer_highlight_two {
+  color: var(--secondary-color);
+}
