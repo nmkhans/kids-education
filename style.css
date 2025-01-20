@@ -87,4 +87,29 @@ img {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
+
+.contact__btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--dark);
+  border-radius: 12px;
+  z-index: -1;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contact__btn button:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Banner area css */
