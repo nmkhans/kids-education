@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+}
+
+:root {
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
