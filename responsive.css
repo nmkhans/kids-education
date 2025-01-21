@@ -60,6 +60,10 @@
     grid-template-columns: 1fr;
   }
 
+  .curriculum__btn {
+    display: none;
+  }
+
   /* Story area responsive */
 
   .stories__content h2 {
