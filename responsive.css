@@ -1,0 +1,110 @@
+/** Mobile device responsive (max: 576px) */
+
+@media screen and (min-width: 200px) and (max-width: 576px) {
+
+  .container {
+    width: 90%;
+  }
+  
+  /* Header area responsive */
+  .header__area {
+    border-bottom: 1px solid #fea301;
+  }
+
+  .logo h4 {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .contact__btn {
+    display: none;
+  }
+
+  .hamburger__menu {
+    display: block;
+  }
+
+  /* Banner area responsive */
+
+  .banner__area {
+    padding: 50px 0;
+  }
+
+  .banner__content {
+    flex-direction: column-reverse;
+  }
+
+  .banner__left {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .banner__left h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  /* Courses area responsive */
+
+  .curriculum__content h2 {
+    font-size: 26px;
+  }
+
+  .curriculum__display {
+    row-gap: 20px;
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+  }
+
+  /* Story area responsive */
+
+  .stories__content h2 {
+    font-size: 26px;
+  }
+
+  .story__card:first-child {
+    display: none;
+  }
+
+  .story__display {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .story__card__content {
+    padding: 10px;
+  }
+
+  .date__pill {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .story__card h3 {
+    font-size: 14px;
+  }
+
+  /* Footer area responsive */
+
+  .footer__content {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer__left {
+    width: 100%;
+  }
+
+  .footer__mid {
+    width: 100%;
+  }
+
+  .footer__right {
+    width: 100%;
+  }
+}

@@ -112,6 +112,14 @@ img {
   visibility: visible;
 }
 
+.hamburger__menu {
+  display: none;
+}
+
+.hamburger__menu span {
+  font-size: 20px;
+}
+
 /* Banner area css */
 
 .banner__content {
