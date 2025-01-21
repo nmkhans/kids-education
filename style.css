@@ -189,6 +189,15 @@ img {
   color: var(--secondary-color);
 }
 
+.marquee {
+  padding: 30px 0;
+}
+
+.marquee__content {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
 /* Standard curriculum area css */
 
 .curriculum__area {
